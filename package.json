@@ -9,6 +9,19 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "codegenConfig": {
+    "name": "NativeAsmFunSpec",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.nativeasmfun"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeAsmFun": "RCTNativeAsmFun"
+      }
+    }
+  },
   "dependencies": {
     "react": "19.2.3",
     "react-native": "0.84.1",
