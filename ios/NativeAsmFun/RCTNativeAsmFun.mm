@@ -6,6 +6,7 @@
 //
 
 #import "RCTNativeAsmFun.h"
+#import "add.h"
 
 @implementation RCTNativeAsmFun
 
@@ -24,15 +25,16 @@
 //}
 
 - (nonnull NSNumber *)add:(double)value1 value2:(double)value2 {
-  return  @1;
+  int64_t res = add_asm(value1, value2);
+  return  @(res);
 }
 
 - (nonnull NSNumber *)mul:(double)value1 value2:(double)value2 {
-  return @2;
+  return @(value1 * value2);
 }
 
 - (nonnull NSNumber *)sub:(double)value1 value2:(double)value2 {
-  return @3;
+  return @(value1 - value2);
 }
 
 

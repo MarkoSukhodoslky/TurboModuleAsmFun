@@ -12,6 +12,7 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C7F5A4562F6EFD37007455CD /* RCTNativeAsmFun.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */; };
+		C7F5A45A2F71B41F007455CD /* add.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F5A4592F71B41F007455CD /* add.s */; };
 		EC51D8A1C98C4C08605A0B64 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TurboModuleAsmFun/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7F5A4542F6EFD37007455CD /* RCTNativeAsmFun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNativeAsmFun.h; sourceTree = "<group>"; };
 		C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeAsmFun.mm; sourceTree = "<group>"; };
+		C7F5A4592F71B41F007455CD /* add.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = add.s; sourceTree = "<group>"; };
+		C7F5A45B2F71B610007455CD /* add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,6 +110,8 @@
 			children = (
 				C7F5A4542F6EFD37007455CD /* RCTNativeAsmFun.h */,
 				C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */,
+				C7F5A4592F71B41F007455CD /* add.s */,
+				C7F5A45B2F71B610007455CD /* add.h */,
 			);
 			path = NativeAsmFun;
 			sourceTree = "<group>";
@@ -204,9 +209,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TurboModuleAsmFun/Pods-TurboModuleAsmFun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TurboModuleAsmFun/Pods-TurboModuleAsmFun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -243,9 +252,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TurboModuleAsmFun/Pods-TurboModuleAsmFun-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TurboModuleAsmFun/Pods-TurboModuleAsmFun-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F5A45A2F71B41F007455CD /* add.s in Sources */,
 				C7F5A4562F6EFD37007455CD /* RCTNativeAsmFun.mm in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
