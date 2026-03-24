@@ -13,6 +13,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C7F5A4562F6EFD37007455CD /* RCTNativeAsmFun.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */; };
 		C7F5A45A2F71B41F007455CD /* add.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F5A4592F71B41F007455CD /* add.s */; };
+		C7F9361E2F72D49900693FF0 /* sub.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F9361D2F72D49900693FF0 /* sub.s */; };
+		C7F936222F72D7EE00693FF0 /* getpid.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936212F72D7EE00693FF0 /* getpid.s */; };
 		EC51D8A1C98C4C08605A0B64 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,10 @@
 		C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeAsmFun.mm; sourceTree = "<group>"; };
 		C7F5A4592F71B41F007455CD /* add.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = add.s; sourceTree = "<group>"; };
 		C7F5A45B2F71B610007455CD /* add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
+		C7F9361D2F72D49900693FF0 /* sub.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = sub.s; sourceTree = "<group>"; };
+		C7F9361F2F72D4A200693FF0 /* sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sub.h; sourceTree = "<group>"; };
+		C7F936202F72D7E300693FF0 /* getpid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getpid.h; sourceTree = "<group>"; };
+		C7F936212F72D7EE00693FF0 /* getpid.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = getpid.s; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,10 @@
 				C7F5A4552F6EFD37007455CD /* RCTNativeAsmFun.mm */,
 				C7F5A4592F71B41F007455CD /* add.s */,
 				C7F5A45B2F71B610007455CD /* add.h */,
+				C7F9361D2F72D49900693FF0 /* sub.s */,
+				C7F9361F2F72D4A200693FF0 /* sub.h */,
+				C7F936202F72D7E300693FF0 /* getpid.h */,
+				C7F936212F72D7EE00693FF0 /* getpid.s */,
 			);
 			path = NativeAsmFun;
 			sourceTree = "<group>";
@@ -272,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F9361E2F72D49900693FF0 /* sub.s in Sources */,
 				C7F5A45A2F71B41F007455CD /* add.s in Sources */,
+				C7F936222F72D7EE00693FF0 /* getpid.s in Sources */,
 				C7F5A4562F6EFD37007455CD /* RCTNativeAsmFun.mm in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);

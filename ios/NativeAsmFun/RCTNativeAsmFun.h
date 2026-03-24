@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <NativeAsmFunSpec/NativeAsmFunSpec.h>
+#import "add.h"
+#import "sub.h"
+#import "getpid.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

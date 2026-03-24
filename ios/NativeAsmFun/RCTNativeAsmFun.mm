@@ -6,7 +6,7 @@
 //
 
 #import "RCTNativeAsmFun.h"
-#import "add.h"
+
 
 @implementation RCTNativeAsmFun
 
@@ -30,11 +30,13 @@
 }
 
 - (nonnull NSNumber *)mul:(double)value1 value2:(double)value2 {
-  return @(value1 * value2);
+  int64_t res = get_pid_asm();
+  return @(res);
 }
 
 - (nonnull NSNumber *)sub:(double)value1 value2:(double)value2 {
-  return @(value1 - value2);
+  int64_t res = sub_asm(value1, value2);
+  return @(res);
 }
 
 

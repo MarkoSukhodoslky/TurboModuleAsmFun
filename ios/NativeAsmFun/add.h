@@ -7,12 +7,4 @@
 
 #pragma once
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-int64_t add_asm(int64_t a, int64_t b);
-
-#ifdef __cplusplus
-}
-#endif
+extern "C"  int64_t add_asm(int64_t a, int64_t b);
