@@ -6,7 +6,7 @@
 //
 .globl _get_pid_asm
  
-.align 2
+.align 4
  
 _get_pid_asm:
  

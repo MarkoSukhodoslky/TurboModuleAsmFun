@@ -15,6 +15,13 @@
 		C7F5A45A2F71B41F007455CD /* add.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F5A4592F71B41F007455CD /* add.s */; };
 		C7F9361E2F72D49900693FF0 /* sub.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F9361D2F72D49900693FF0 /* sub.s */; };
 		C7F936222F72D7EE00693FF0 /* getpid.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936212F72D7EE00693FF0 /* getpid.s */; };
+		C7F936242F756A7300693FF0 /* mul.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936232F756A7300693FF0 /* mul.s */; };
+		C7F936282F756B3600693FF0 /* div.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936272F756B3600693FF0 /* div.s */; };
+		C7F9362A2F756CB300693FF0 /* and.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936292F756CB300693FF0 /* and.s */; };
+		C7F9362E2F756D8800693FF0 /* or.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F9362D2F756D8800693FF0 /* or.s */; };
+		C7F936302F756E3E00693FF0 /* eor.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F9362F2F756E3E00693FF0 /* eor.s */; };
+		C7F936342F75704D00693FF0 /* lsl.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936332F75704D00693FF0 /* lsl.s */; };
+		C7F936362F75707A00693FF0 /* lsr.s in Sources */ = {isa = PBXBuildFile; fileRef = C7F936352F75707A00693FF0 /* lsr.s */; };
 		EC51D8A1C98C4C08605A0B64 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,20 @@
 		C7F9361F2F72D4A200693FF0 /* sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sub.h; sourceTree = "<group>"; };
 		C7F936202F72D7E300693FF0 /* getpid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getpid.h; sourceTree = "<group>"; };
 		C7F936212F72D7EE00693FF0 /* getpid.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = getpid.s; sourceTree = "<group>"; };
+		C7F936232F756A7300693FF0 /* mul.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = mul.s; sourceTree = "<group>"; };
+		C7F936252F756A8100693FF0 /* mul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mul.h; sourceTree = "<group>"; };
+		C7F936262F756B2100693FF0 /* div.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = div.h; sourceTree = "<group>"; };
+		C7F936272F756B3600693FF0 /* div.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = div.s; sourceTree = "<group>"; };
+		C7F936292F756CB300693FF0 /* and.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = and.s; sourceTree = "<group>"; };
+		C7F9362B2F756CBC00693FF0 /* and.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = and.h; sourceTree = "<group>"; };
+		C7F9362C2F756D7200693FF0 /* or.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = or.h; sourceTree = "<group>"; };
+		C7F9362D2F756D8800693FF0 /* or.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = or.s; sourceTree = "<group>"; };
+		C7F9362F2F756E3E00693FF0 /* eor.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = eor.s; sourceTree = "<group>"; };
+		C7F936312F756E4700693FF0 /* eor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eor.h; sourceTree = "<group>"; };
+		C7F936322F75704300693FF0 /* lsl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lsl.h; sourceTree = "<group>"; };
+		C7F936332F75704D00693FF0 /* lsl.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = lsl.s; sourceTree = "<group>"; };
+		C7F936352F75707A00693FF0 /* lsr.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = lsr.s; sourceTree = "<group>"; };
+		C7F936372F75708400693FF0 /* lsr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lsr.h; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -122,6 +143,20 @@
 				C7F9361F2F72D4A200693FF0 /* sub.h */,
 				C7F936202F72D7E300693FF0 /* getpid.h */,
 				C7F936212F72D7EE00693FF0 /* getpid.s */,
+				C7F936232F756A7300693FF0 /* mul.s */,
+				C7F936252F756A8100693FF0 /* mul.h */,
+				C7F936262F756B2100693FF0 /* div.h */,
+				C7F936272F756B3600693FF0 /* div.s */,
+				C7F936292F756CB300693FF0 /* and.s */,
+				C7F9362B2F756CBC00693FF0 /* and.h */,
+				C7F9362C2F756D7200693FF0 /* or.h */,
+				C7F9362D2F756D8800693FF0 /* or.s */,
+				C7F9362F2F756E3E00693FF0 /* eor.s */,
+				C7F936312F756E4700693FF0 /* eor.h */,
+				C7F936322F75704300693FF0 /* lsl.h */,
+				C7F936332F75704D00693FF0 /* lsl.s */,
+				C7F936352F75707A00693FF0 /* lsr.s */,
+				C7F936372F75708400693FF0 /* lsr.h */,
 			);
 			path = NativeAsmFun;
 			sourceTree = "<group>";
@@ -282,10 +317,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F936342F75704D00693FF0 /* lsl.s in Sources */,
+				C7F936242F756A7300693FF0 /* mul.s in Sources */,
+				C7F9362A2F756CB300693FF0 /* and.s in Sources */,
+				C7F936362F75707A00693FF0 /* lsr.s in Sources */,
 				C7F9361E2F72D49900693FF0 /* sub.s in Sources */,
+				C7F936302F756E3E00693FF0 /* eor.s in Sources */,
+				C7F9362E2F756D8800693FF0 /* or.s in Sources */,
 				C7F5A45A2F71B41F007455CD /* add.s in Sources */,
 				C7F936222F72D7EE00693FF0 /* getpid.s in Sources */,
 				C7F5A4562F6EFD37007455CD /* RCTNativeAsmFun.mm in Sources */,
+				C7F936282F756B3600693FF0 /* div.s in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

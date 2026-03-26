@@ -5,6 +5,7 @@ export type Instructions =
   | 'DIV'
   | 'AND'
   | 'OR'
-  | 'XOR'
-  | 'SHL'
-  | 'SHR';
+  | 'EOR'
+  | 'LSL'
+  | 'LSR'
+  | 'PID';

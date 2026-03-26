@@ -7,9 +7,10 @@ const INSTRUCTIONS = [
   { label: 'DIV', symbol: '÷', color: '#4FC9F7' },
   { label: 'AND', symbol: '&', color: '#4FF7A0' },
   { label: 'OR', symbol: '|', color: '#F7D24F' },
-  { label: 'XOR', symbol: '^', color: '#F74FA0' },
-  { label: 'SHL', symbol: '<<', color: '#F7A44F' },
-  { label: 'SHR', symbol: '>>', color: '#7FF74F' },
+  { label: 'EOR', symbol: '^', color: '#F74FA0' },
+  { label: 'LSL', symbol: '<<', color: '#F7A44F' },
+  { label: 'LSR', symbol: '>>', color: '#7FF74F' },
+  { label: 'PID', symbol: '?', color: '#acff05' },
 ];
 
 export const InstructionsSection = ({ setOp, op }: any) => {

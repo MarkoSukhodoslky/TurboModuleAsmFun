@@ -15,12 +15,40 @@ function add(value1: number, value2: number): number {
   return NativeAsmFun?.add(value1, value2);
 }
 
+function sub(value1: number, value2: number): number {
+  return NativeAsmFun?.sub(value1, value2);
+}
+
 function mul(value1: number, value2: number): number {
   return NativeAsmFun?.mul(value1, value2);
 }
 
-function sub(value1: number, value2: number): number {
-  return NativeAsmFun?.sub(value1, value2);
+function div(value1: number, value2: number): number {
+  return NativeAsmFun?.div(value1, value2);
+}
+
+function and(value1: number, value2: number): number {
+  return NativeAsmFun?.and(value1, value2);
+}
+
+function or(value1: number, value2: number): number {
+  return NativeAsmFun?.or(value1, value2);
+}
+
+function eor(value1: number, value2: number): number {
+  return NativeAsmFun?.eor(value1, value2);
+}
+
+function lsl(value1: number, value2: number): number {
+  return NativeAsmFun?.lsl(value1, value2);
+}
+
+function lsr(value1: number, value2: number): number {
+  return NativeAsmFun?.lsr(value1, value2);
+}
+
+function get_pid(): number {
+  return NativeAsmFun?.get_pid();
 }
 
 function App() {
@@ -44,11 +72,32 @@ function AppContent() {
       case 'ADD':
         setResult(add(v1, v2));
         break;
+      case 'SUB':
+        setResult(sub(v1, v2));
+        break;
       case 'MUL':
         setResult(mul(v1, v2));
         break;
-      case 'SUB':
-        setResult(sub(v1, v2));
+      case 'DIV':
+        setResult(div(v1, v2));
+        break;
+      case 'AND':
+        setResult(and(v1, v2));
+        break;
+      case 'OR':
+        setResult(or(v1, v2));
+        break;
+      case 'XOR':
+        setResult(eor(v1, v2));
+        break;
+      case 'LSL':
+        setResult(lsl(v1, v2));
+        break;
+      case 'LSR':
+        setResult(lsr(v1, v2));
+        break;
+      case 'PID':
+        setResult(get_pid());
         break;
       default:
         setResult(0);

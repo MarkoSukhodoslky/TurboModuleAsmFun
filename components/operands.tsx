@@ -14,6 +14,7 @@ export const Operands = ({ setV1, setV2, v1, v2 }: any) => {
         <View style={styles.input}>
           <Text style={styles.value}>{v1}</Text>
           <Text style={styles.inputLable}>value1</Text>
+          <Text style={styles.inputReg}>reg X0</Text>
           <View>
             <TouchableOpacity onPress={() => setV1(v1 + 1)}>
               <Text style={{ color: '#E6EDF3' }}>up</Text>
@@ -26,6 +27,7 @@ export const Operands = ({ setV1, setV2, v1, v2 }: any) => {
         <View style={styles.input}>
           <Text style={styles.value}>{v2}</Text>
           <Text style={styles.inputLable}>value2</Text>
+          <Text style={styles.inputReg}>reg X1</Text>
           <View>
             <TouchableOpacity onPress={() => setV2(v2 + 1)}>
               <Text style={{ color: '#E6EDF3' }}>up</Text>
@@ -79,6 +81,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 6,
     top: 4,
+  },
+  inputReg: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#7D8590',
+    position: 'absolute',
+    right: 6,
+    bottom: 4,
   },
   value: {
     fontSize: 32,
