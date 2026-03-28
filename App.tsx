@@ -87,7 +87,7 @@ function AppContent() {
       case 'OR':
         setResult(or(v1, v2));
         break;
-      case 'XOR':
+      case 'EOR':
         setResult(eor(v1, v2));
         break;
       case 'LSL':
